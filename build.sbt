@@ -4,11 +4,11 @@ enablePlugins(DebianPlugin)
 enablePlugins(JDebPackaging)
 enablePlugins(SystemVPlugin)
   
-name := "Chat Demo"
+name := "TODO tracker"
 scalaVersion := "2.11.8"
 version := "0.1.0"
 maintainer := "Aleksey Fomkin <aleksey.fomkin@gmail.com>"
-packageSummary := "Simple chat web application"
+packageSummary := "Simple GTD web application"
 packageDescription := "Korolev based demo application for my speak at FPConf Moscow 2016"
 
 libraryDependencies ++= Seq(
@@ -16,4 +16,3 @@ libraryDependencies ++= Seq(
   "com.github.fomkin" %% "korolev-server" % "0.0.6",
   "ch.qos.logback" % "logback-classic" % "1.1.7"
 )
-

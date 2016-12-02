@@ -1,13 +1,13 @@
-# Chat Demo
+# Super ToDo Tracker
 
 Korolev based demo application for my speak at FPConf Moscow 2016
 
-TODO add link to slideshare
-TODO add link to video
+1. TODO add link to slideshare
+2. TODO add link to video
 
 # How to run
 
     ./sbt run
 
-Open browser at http://localhost:7181
+Open browser at [http://localhost:7181](http://localhost:7181)
 
