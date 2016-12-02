@@ -24,7 +24,7 @@ class View(access: KorolevAccess[State]) extends Shtml {
 
   // Generate AddTodo action when 'Add' button clicked
   val addTodoClick: EventFactory[Unit] =
-    access.event("submit") { _ =>
+    access.event("click") { _ =>
       deferredTransition {
         inputId.get[String]('value) map { value =>
           val todo = Todo(value, done = false)
@@ -55,13 +55,14 @@ class View(access: KorolevAccess[State]) extends Shtml {
               )
           }
         ),
-        'form(addTodoClick(()),
+        'div(
           'input(
             inputId,
             'type /= "text",
             'placeholder /= "What should be done?"
           ),
           'button(
+            addTodoClick(()),
             "Submit"
           )
         )

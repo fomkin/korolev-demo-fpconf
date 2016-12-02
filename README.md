@@ -9,5 +9,5 @@ Korolev based demo application for my speak at FPConf Moscow 2016
 
     ./sbt run
 
-Open browser at [http://localhost:7181](http://localhost:7181)
+Open browser at [http://localhost:7281](http://localhost:7281)
 
